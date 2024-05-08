@@ -11,6 +11,12 @@
         <vm:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
+        <ToolBar HorizontalAlignment="Center" Height="52" VerticalAlignment="Top" Width="800" Padding="5">
+            <Image Height="30" Width="30"/>
+        </ToolBar>
 
+        <Grid>
+            <Frame x:Name="MainFrame" Content="{Binding CurrentPage}"/>
+        </Grid>
     </Grid>
 </Window>
