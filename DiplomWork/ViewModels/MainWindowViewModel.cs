@@ -1,4 +1,5 @@
-﻿using DiplomWork.ViewModels.Base;
+﻿using DiplomWork.DataModels;
+using DiplomWork.ViewModels.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,14 @@ namespace DiplomWork.ViewModels
         {
             get => _Title;
             set => Set(ref _Title, value);
-        } 
+        }
+        #endregion
+
+        #region Текущая страница приложения
+        /// <summary>
+        /// Текущая страница приложения
+        /// </summary>
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
         #endregion
     }
 }
