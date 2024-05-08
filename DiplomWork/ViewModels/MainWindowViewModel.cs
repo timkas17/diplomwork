@@ -1,4 +1,4 @@
-﻿using DiplomWork.DataModels;
+﻿using DiplomWork;
 using DiplomWork.ViewModels.Base;
 using System;
 using System.Collections.Generic;

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DiplomWork.Views.Windows
+namespace DiplomWork.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthWindow.xaml
+    /// Логика взаимодействия для LoginPage.xaml
     /// </summary>
-    public partial class AuthWindow : Page
+    public partial class LoginPage : Page
     {
-        public AuthWindow()
+        public LoginPage()
         {
             InitializeComponent();
         }

@@ -1,4 +1,4 @@
-﻿namespace DiplomWork.DataModels
+﻿namespace DiplomWork
 {
     /// <summary>
     /// Страница приложения
