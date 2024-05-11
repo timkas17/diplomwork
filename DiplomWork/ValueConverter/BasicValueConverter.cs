@@ -27,7 +27,7 @@ namespace DiplomWork.ValueConverter
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
             return mConverter ?? (mConverter = new T());
-        } 
+        }
         #endregion
 
         #region Методы конвертирования значений
@@ -40,10 +40,7 @@ namespace DiplomWork.ValueConverter
         /// <param name="culture"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract object Convert(object value, Type targetType, object parameter, CultureInfo culture);
         /// <summary>
         /// Метод для конвертирования к начальному значению
         /// </summary>
@@ -53,10 +50,7 @@ namespace DiplomWork.ValueConverter
         /// <param name="culture"></param>
         /// <returns></returns>
         /// <exception cref="NotImplementedException"></exception>
-        public object ConvertBack(object value, Type targetType, object parametr, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract object ConvertBack(object value, Type targetType, object parametr, CultureInfo culture);
         #endregion
     }
 }

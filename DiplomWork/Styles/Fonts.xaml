@@ -2,4 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local ="clr-namespace:DiplomWork">
 
+    <FontFamily x:Key="UbuntuRegular">./Fonts/#UbuntuSans Regular</FontFamily>
+    <FontFamily x:Key="UbuntuThin">./Fonts/#UbuntuSans Thin</FontFamily>
+    
 </ResourceDictionary>

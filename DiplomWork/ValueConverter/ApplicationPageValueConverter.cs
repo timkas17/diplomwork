@@ -12,7 +12,7 @@ namespace DiplomWork.ValueConverter
     /// </summary>
     public class ApplicationPageValueConverter : BasicValuseConverter<ApplicationPageValueConverter>
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             //Нахождение соответствующей страницы
             switch ((ApplicationPage)value)
@@ -25,7 +25,7 @@ namespace DiplomWork.ValueConverter
                     return null;
             }
         }
-        public object ConvertBack(object value, Type targetType, object parametr, CultureInfo culture)
+        public override object ConvertBack(object value, Type targetType, object parametr, CultureInfo culture)
         {
             throw new NotImplementedException();
         }

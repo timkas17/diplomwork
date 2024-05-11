@@ -7,16 +7,29 @@
         xmlns:local="clr-namespace:DiplomWork"
         xmlns:vc="clr-namespace:DiplomWork.ValueConverter"
         mc:Ignorable="d"
-        Title="{Binding Title}" Height="450" Width="800">
+        Title="{Binding Title}" Height="450" Width="800"
+        SizeToContent="WidthAndHeight">
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <ToolBar HorizontalAlignment="Center" Height="52" VerticalAlignment="Top" Width="800" Padding="5">
+    <Grid Height="700">
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="52" Height="2*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <Grid MinHeight="52" VerticalAlignment="Center" Grid.Row="0" 
+                 Height="52" Background="LightYellow">
             <Image Height="30" Width="30"/>
-        </ToolBar>
+            <TextBlock Margin="20, 0, 0. 0" FontSize="18" VerticalAlignment="Bottom">Экскурсии по Волгограду</TextBlock>
+                <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0, 0, 20, 0" HorizontalAlignment="Right" >
+                    <TextBlock VerticalAlignment="Bottom">Вход</TextBlock>
+                    <TextBlock VerticalAlignment="Bottom" Margin="10, 0, 0, 0">Регистрация</TextBlock>
+                    <TextBlock VerticalAlignment="Bottom" Margin="10, 0, 0, 0">Помощь</TextBlock>
+                </StackPanel>
+        </Grid>
 
-        <Grid>
+        <!--Login page-->
+        <Grid Grid.Row="1">
             <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={vc:ApplicationPageValueConverter}}"/>
         </Grid>
     </Grid>
