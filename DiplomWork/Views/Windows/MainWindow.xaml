@@ -15,17 +15,19 @@
     <Grid MinHeight="700" MinWidth="700">
         <Grid.RowDefinitions>
             <RowDefinition MinHeight="52" Height="2*"/>
-            <RowDefinition Height="25*"/>
+            <RowDefinition Height="26*"/>
         </Grid.RowDefinitions>
         <Grid MinHeight="52" VerticalAlignment="Top" Grid.Row="0" 
                  Height="52" Background="LightYellow">
             <Image Height="30" Width="30"/>
-            <TextBlock Margin="20, 0, 0. 0" 
+            <TextBlock Margin="20 0 0 0" 
                        FontSize="{StaticResource FontSizeLarge}" 
                        VerticalAlignment="Bottom"
-                       Foreground="{StaticResource WordOrangeBrush}">Экскурсии по Волгограду</TextBlock>
+                       Foreground="{StaticResource WordOrangeBrush}"
+                       FontFamily="{StaticResource SansSerif}"
+                       FontWeight="UltraLight">Экскурсии по Волгограду</TextBlock>
                 <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal" Margin="0, 0, 20, 0" HorizontalAlignment="Right" >
-                    <TextBlock VerticalAlignment="Bottom">Вход</TextBlock>
+                    <TextBlock VerticalAlignment="Bottom" FontFamily="{StaticResource SansSerif}">Вход</TextBlock>
                     <TextBlock VerticalAlignment="Bottom" Margin="10, 0, 0, 0">Регистрация</TextBlock>
                     <TextBlock VerticalAlignment="Bottom" Margin="10, 0, 0, 0">Помощь</TextBlock>
                 </StackPanel>

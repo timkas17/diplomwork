@@ -2,6 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local ="clr-namespace:DiplomWork">
 
+    <!--#region Поле ввода для страницы регистрации -->
     <Style TargetType="{x:Type TextBox}">
         <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}"/>
         <Setter Property="Padding" Value="10"/>
@@ -22,7 +23,9 @@
                                    Padding="{TemplateBinding Padding}"
                                    VerticalAlignment="Center"
                                    HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
-                                   Foreground="{StaticResource ForegroundDarkBrush}">
+                                   Foreground="{StaticResource ForegroundDarkBrush}"
+                                   FontFamily="{StaticResource SansSerif}"
+                                   FontWeight="Thin">
                             <TextBlock.Style>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Visibility" Value="Collapsed"/>
@@ -49,7 +52,8 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        
+
     </Style>
-    
+    <!--#endregion-->
+
 </ResourceDictionary>

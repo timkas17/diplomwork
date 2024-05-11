@@ -22,26 +22,41 @@
                             Padding="15 50 15 15"
                             Width="330"
                             Margin="50 50 50 0">
-
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="5"/>
+                        </Border.Effect>
                         <StackPanel>
                             <!--Заголовок-->
                             <TextBlock Text="Зарегестрироваться"
                                    FontSize="{StaticResource FontSizeLarge}"
-                                   Foreground="{StaticResource WordBlueBrush}"/>
+                                   Foreground="{StaticResource WordBlueBrush}"
+                                   FontFamily="{StaticResource SansSerif}"/>
                             <!--Подзаголовок-->
                             <TextBlock Text="Место хороших экскурсий"
                                    FontSize="{StaticResource FontSizeRegular}"
+                                   FontFamily="{StaticResource SansSerif}"
                                    Foreground="{StaticResource ForegroundDarkBrush}"
-                                   Margin="0 0 0 20"/>
+                                   Margin="0 0 0 20"
+                                   FontWeight="Thin"/>
                             <!--Поле Электронная почта-->
                             <TextBox Tag="Электронная почта"/>
                             <!--Поле Пароль-->
                             <TextBox Tag="Пароль" Margin="0 0 0 30"/>
                             <!--Кнопка регистрации-->
-                            <Button Content="Вперед" HorizontalAlignment="Center"/>
+                            <Button Content="Вперед" HorizontalAlignment="Center" BorderThickness="1">
+                                <Button.Effect>
+                                    <DropShadowEffect ShadowDepth="0" />
+                                </Button.Effect>
+                            </Button>
                         </StackPanel>
                     </Border>
-                    <Button Style="{StaticResource TextButton}" Content="У меня уже есть аккаунт" HorizontalAlignment="Center"/>
+                    <Button Style="{StaticResource TextButton}" 
+                            Content="У меня уже есть аккаунт" 
+                            HorizontalAlignment="Center">
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="0"/>
+                        </Button.Effect>
+                    </Button>
                 </StackPanel>
             </ScrollViewer>
         </Grid>

@@ -3,8 +3,7 @@
                     xmlns:local ="clr-namespace:DiplomWork"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-    <FontFamily x:Key="UbuntuSansRegular">pack://application;,,,/Fonts/#UbuntuSans Regular</FontFamily>
-    <FontFamily x:Key="UbuntuSansThin">./Fonts/#UbuntuSans Thin</FontFamily>
+    <FontFamily x:Key="SansSerif">Microsoft Sans Serif</FontFamily>
 
 
     <system:Double x:Key="FontSizeRegular">20</system:Double>
