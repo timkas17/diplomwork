@@ -5,10 +5,45 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiplomWork.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="700" d:DesignWidth="700"
       Title="LoginPage">
 
-    <Grid>
-        
-    </Grid>
+    <Border Background="{StaticResource WordBlueBrush}">
+        <Grid>
+            <!--Главное содержимое-->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    TextBlock.TextAlignment="Center">
+                    <!--Блок регистрации-->
+                    <Border Background="{StaticResource ForegroundLightBrush}"
+                            CornerRadius="10"
+                            Padding="15 50 15 15"
+                            Width="330"
+                            Margin="50 50 50 0">
+
+                        <StackPanel>
+                            <!--Заголовок-->
+                            <TextBlock Text="Зарегестрироваться"
+                                   FontSize="{StaticResource FontSizeLarge}"
+                                   Foreground="{StaticResource WordBlueBrush}"/>
+                            <!--Подзаголовок-->
+                            <TextBlock Text="Место хороших экскурсий"
+                                   FontSize="{StaticResource FontSizeRegular}"
+                                   Foreground="{StaticResource ForegroundDarkBrush}"
+                                   Margin="0 0 0 20"/>
+                            <!--Поле Электронная почта-->
+                            <TextBox Tag="Электронная почта"/>
+                            <!--Поле Пароль-->
+                            <TextBox Tag="Пароль" Margin="0 0 0 30"/>
+                            <!--Кнопка регистрации-->
+                            <Button Content="Вперед" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <Button Style="{StaticResource TextButton}" Content="У меня уже есть аккаунт" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Border>
 </Page>
